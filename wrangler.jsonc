@@ -8,20 +8,22 @@
 		{
 			"binding": "DB",
 			"database_name": "emting-emdash-site",
-			// Run `wrangler d1 create emting-emdash-site` and paste the real ID here for deploy
-			"database_id": "local",
+			"database_id": "3555c784-34cb-4713-8cd7-f35ddf16f466",
 		},
 	],
+	"kv_namespaces": [
+		{
+			"binding": "SESSION",
+			"id": "525be723bb8b4ebfb5a2ad8936dbd24e",
+		},
+	],
+	"images": {
+		"binding": "IMAGES",
+	},
 	"r2_buckets": [
 		{
 			"binding": "MEDIA",
 			"bucket_name": "emting-emdash-media",
-		},
-	],
-	// Worker Loader for plugin sandboxing
-	"worker_loaders": [
-		{
-			"binding": "LOADER",
 		},
 	],
 }
